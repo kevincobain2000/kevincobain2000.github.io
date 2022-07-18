@@ -4,6 +4,25 @@
   </a>
 </p>
 
+## Dev
+
+```sh
+npm install -g pnpm
+pnpm install
+pnpm run dev
+```
+
+## Static pages
+
+```sh
+pnpm run export
+```
+
+## Prod
+
+```sh
+pnpm run start
+```
 ## CHANGELOG
 
 - Moved static to nextjs

@@ -127,7 +127,7 @@ section:last-of-type {
 
 #intro .portrait {
   display: block;
-  background-image: url(../public/me.jpeg);
+  background-image: url(/me.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 1;
@@ -151,7 +151,7 @@ section:last-of-type {
   display: inline-block;
   width: 1.3rem;
   height: 1em;
-  background-image: url(../public/equalizer.gif);
+  background-image: url(/equalizer.gif);
   background-repeat: no-repeat;
   background-position: left;
   border: 0px solid #000;
@@ -242,7 +242,7 @@ article h2 {
 .headshot {
   position: relative;
   display: block;
-  background-image: url(../public/me.jpeg);
+  background-image: url(/me.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   background-blend-mode: multiply;

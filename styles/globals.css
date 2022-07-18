@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-/* colour and type */
-
 html,body {
   --text-color: #05054F;
   --background-color: #fff;

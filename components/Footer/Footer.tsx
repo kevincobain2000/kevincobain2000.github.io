@@ -5,7 +5,7 @@ export const Footer = (props:Props) => {
         <>
           <p>&copy; 2019 Pulkit Kathuria</p>
           <p>
-            <a href="#" name="top" title="Back to top">
+            <a href="#" title="Back to top">
               Back to top ↑
             </a>
           </p>

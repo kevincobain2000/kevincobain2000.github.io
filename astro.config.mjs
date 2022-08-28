@@ -1,5 +1,4 @@
-import { defineConfig } from 'astro/config';
-import partytown from "@astrojs/partytown";
+import { defineConfig } from 'astro/config'; // import lit from '@astrojs/lit';
 // https://astro.build/config
 
 import compress from "astro-compress";
@@ -10,11 +9,5 @@ export default defineConfig({// ...
 
   integrations: [
     compress(),
-    partytown({
-      // Adds dataLayer.push as a forwarding-event.
-      config: {
-        forward: ["dataLayer.push"],
-      },
-    }),
   ]
 });

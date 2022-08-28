@@ -1,0 +1,150 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Pulkit Kathuria</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="I work at Rakuten designing platform products to power entrepreneurship worldwide." />
+        <meta name="keywords" content="Pulkit Kathuria, design, product, platform, international, Japan, Rakuten" />
+        <meta name="author" content="Pulkit Kathuria" />
+        <meta property="og:title" content="Pulkit Kathuria" />
+        <meta property="og:description" content="I work at Rakuten as Applications Engineer in Japan" />
+        <meta property="og:image" content="https://kevincobain2000.github.io/me.png" />
+        <meta property="og:url" content="https://kevincobain2000.github.io" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:site_name" content="Pulkit Kathuria" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
+
+    <script
+        type="text/partytown"
+        src="https://www.googletagmanager.com/gtag/js?id=UA-40862413-1"
+      >
+
+      </script>
+      <script type="text/partytown">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-40862413-1");
+      </script>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto:500&display=swap');
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body {
+  --text-color: #05054F;
+  --background-color: #fff;
+  --background-color-2: #FFFEF6;
+  --link-color: #05054F;
+  --link-hover-color: #05054F;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: -0.2px;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #05054F;
+  color: var(--text-color);
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, var(--background-color) 0%, var(--background-color-2) 90%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  transition: all .25s;
+}
+::selection { /* WebKit/Blink Browsers */
+  background: rgb(49, 47, 47);
+  color: #fff;
+  opacity: 1;
+}
+::-moz-selection {
+  background: rgb(49, 47, 47);; /* Gecko Browsers */
+  color: #fff;
+  opacity: 1;
+}
+.fa {
+  color: rgb(49, 47, 47);;
+}
+h1,h2,h3,h4 {
+  display: block;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 0;
+  padding: 0;
+  color: rgb(30, 15, 15);;
+  line-height: 1.5em;
+  text-align: left;
+  z-index: 10;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+p {
+  opacity: 0.8;
+}
+a,a:active {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  opacity: 1;
+  color: var(--link-color);
+  outline: none;
+}
+a:hover,a:focus {
+  text-decoration: none;
+  color: var(--link-hover-color);
+  outline: none;
+  cursor: pointer;
+}
+
+/* page layout */
+
+main {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 50%;
+  max-width: 940px
+}
+section {
+  /*background-color: #fff;*/
+  margin: 5em 0 0em 0;
+}
+section:last-of-type {
+  margin-bottom: 0em;
+}
+</style>

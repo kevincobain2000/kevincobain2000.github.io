@@ -1,0 +1,638 @@
+---
+import Layout from '../layouts/Layout.astro';
+// import Card from '../components/Card.astro';
+const openSourced = [
+        {
+            name: "Sentiment Classifier",
+            description: "Sentiment Classifier using Word Sense Disambiguation",
+            github: "https://github.com/kevincobain2000/sentiment_classifier",
+            demo: "",
+            blog: "",
+        },
+        {
+            name: "jProcessing",
+            description: "Japanese Natural Langauge Processing Libraries",
+            github: "https://github.com/kevincobain2000/jProcessing",
+            demo: ""
+        },
+        {
+            name: "Laravel Throttled Alert Notifications",
+            description: "Send alert to email, microsoft teams from laravel app, when an exception occurs.",
+            github: "https://github.com/kevincobain2000/laravel-alert-notifications",
+            demo: ""
+        },
+        {
+            name: "Gobrew",
+            description: "Install and manage Go version",
+            github: "https://github.com/kevincobain2000/gobrew",
+            demo: "https://github.com/kevincobain2000/gobrew/actions",
+            blog: "https://medium.com/web-developer/go-version-manager-gobrew-c8750157dfe6"
+        },
+        {
+            name: "Setup Go - Github Action",
+            description: "Setup Go in github action",
+            github: "https://github.com/kevincobain2000/action-gobrew",
+            demo: "",
+            blog: "https://medium.com/web-developer/dead-simple-go-setup-github-actions-ee9fd7e1c87f"
+        },
+        {
+            name: "Scrape App store and Google play reviews",
+            description: "App store reviews monitoring tool",
+            github: "https://github.com/kevincobain2000/go-app-reviews-scraper",
+            demo: "",
+            blog: ""
+        },
+        {
+            name: "Laravel Request Docs",
+            description: "Automatically generate Laravel API docs",
+            github: "https://github.com/rakutentech/laravel-request-docs",
+            demo: "https://kevincobain2000.github.io/laravel-admin-api/request-docs/",
+            blog: ""
+        },
+        {
+            name: "Laravel ERD",
+            description: "Automatically generate Laravel ERD",
+            github: "https://github.com/kevincobain2000/laravel-erd",
+            demo: "https://kevincobain2000.github.io/laravel-blog/erd/",
+            blog: ""
+        },
+        {
+            name: "Miller Rabin Primality Test Online",
+            description: "Big integers prime number checker",
+            github: "https://github.com/kevincobain2000/miller-rabin-primality-test-online",
+            demo: "https://kevincobain2000.github.io/miller-rabin-primality-test-online/",
+            blog: ""
+        },
+        {
+            name: "Google Cloud Icons Search",
+            description: "Search Google Cloud Icons",
+            github: "https://github.com/kevincobain2000/google-cloud-icons",
+            demo: "https://kevincobain2000.github.io/google-cloud-icons/",
+            blog: ""
+        },
+        {
+            name: "Go Language Cheat Sheet",
+            description: "Quick search for golang syntax and features",
+            github: "https://github.com/kevincobain2000/golang-cheat-sheet",
+            demo: "https://kevincobain2000.github.io/golang-cheat-sheet/",
+            blog: ""
+        },
+        {
+            name: "LATEX Writer",
+            description: "Write beautiful docs in LaTeX css.",
+            github: "https://github.com/kevincobain2000/latex-writer/",
+            demo: "https://kevincobain2000.github.io/latex-writer/",
+            blog: ""
+        },
+        {
+            name: "Medium Code Highlight",
+            description: "Add highlighted code to Medium story.",
+            github: "https://github.com/kevincobain2000/medium-code-highlight/",
+            demo: "https://kevincobain2000.github.io/medium-code-highlight/",
+            blog: ""
+        }
+    ];
+---
+
+<Layout title="Welcome to Astro.">
+    <main>
+        <section id="intro">
+            <h1 class="name">Pulkit Kathuria</h1>
+            <div class="portrait"></div>
+            <p class="tagline">
+              Tech lead, developer, front end, back end, dev ops and server side
+              engineer. Architect and Assistant Manager.
+            </p>
+            <div class="bio">
+                <p>
+                  I am a Tokyo based Applications developer. Working in{" "}
+                  <a
+                    href="https://global.rakuten.com/corp/about/"
+                    title="Rakuten Inc"
+                  >
+                    {" "}
+                    Rakuten Inc.
+                  </a>
+                  , Japan as Tech Lead and Architect. Prior to that I worked at{" "}
+                  <a href="https://www.jaist.ac.jp/index.html" title="Gree">
+                    JAIST
+                  </a>
+                  ,{" "}
+                  <a href="https://corp.gree.net/jp/en/" title="Gree">
+                    GREE
+                  </a>
+                  ,{" "}
+                  <a href="https://www.telstra.com.au/" title="Telstra">
+                    Telstra
+                  </a>{" "}
+                  and IBM
+                </p>
+                <p>
+                  🎓 Before my career in IT tech industry, I studied NLP and A.I in
+                  the{" "}
+                  <a href="https://www.jaist.ac.jp/index.html">
+                    JAIST 北陸先端科学技術大学院大学
+                  </a>
+                  . Computer Science at{" "}
+                  <a href="https://www.rmit.edu.au" title="RMIT">
+                    RMIT
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="https://www.cqu.edu.au/"
+                    title="Central Queensland University"
+                  >
+                    Central Queensland University
+                  </a>
+                </p>
+                <p class='bio'>
+                    👋{" "}
+                    <a href="kevincobain2000@gmail.com">kevincobain2000@gmail.com</a>
+                    <br />
+                    🚀{" "}
+                    <a href="https://www.linkedin.com/in/プルキット-カトゥーリヤ-5895b759/">
+                        LinkedIn
+                    </a>
+                    <br />
+                    ✒️ <a href="https://medium.com/@kevincobain2000_74431">Medium</a>
+                    <br />
+                    💻 <a href="https://github.com/kevincobain2000">Github</a>
+                    <br />
+                    </p>
+              </div>
+        </section>
+        <section id="appearances">
+            <div>
+                <h2>Tools</h2>
+                <div class="appearances-list">
+                  <div class="headshot"></div>
+                  <ul>
+                      {openSourced.map((appearance) => (
+                          <li>
+                              <h4>{appearance.name}</h4>
+                              {appearance.description}
+                              <br />
+                              <a href={appearance.github} title={appearance.github}>Github</a>
+                              {" "}
+                              {appearance.demo && <a href={appearance.demo} title={appearance.demo}>Demo</a>}
+                              {" "}
+                              {appearance.blog && <a href={appearance.blog} title={appearance.blog}>Blog</a>}
+                          </li>
+                      ))}
+                  </ul>
+                </div>
+              </div>
+        </section>
+
+        <section id="footer">
+            <p>&copy; 2019 Pulkit Kathuria</p>
+            <p>
+              <a href="#" title="Back to top">
+                Back to top ↑
+              </a>
+            </p>
+        </section>
+      </main>
+      <div>
+        <div class="morph-wrap">
+            <svg
+            class="morph morph-fill"
+            width="1400"
+            height="770"
+            viewBox="0 0 1400 770"
+            >
+            <path d="M1124,500 C1576.65519,710.690415 1354.69369,67.8405524 1172,34 C989.306308,0.159447625 202,-47.8558795 105,118 C8,283.855879 72.6921256,450.354687 250,398 C504,323 849,372 1124,500 Z" />
+            </svg>
+        </div>
+        <div class="morph-wrap morph-outline">
+            <svg class="morph" viewBox="0 0 1400 770">
+            <path
+                stroke="#EBC6B0"
+                stroke-width="1"
+                fill="none"
+                d="M427.015355,167.437606 C535.482156,52.9439714 593.887357,-31.3182891 805.13435,-60.458785 C1016.38134,-89.5992808 1370.46804,-110.922957 1380,-153 C1398,-232.457597 608,-485.124776 321,-323.062388 C34,-161 71.298211,497.441846 191,497.441846 C310.701789,497.441846 278.715871,323.977181 427.015355,167.437606 Z"
+            />
+            </svg>
+        </div>
+        <div class="morph-wrap morph-outline-lower">
+            <svg class="morph" width="100%" height="100%">
+            <path
+                stroke="#00004F"
+                stroke-width="1"
+                fill="none"
+                d="M-144.479461,787.624587 C-26.8935519,862.038113 -15.8974916,946.952497 292.444372,1025.98122 C600.786236,1105.00994 1075.85569,856.663621 1339.31042,683.5 C1602.76516,510.336379 1872.33159,608.422489 1693.89739,944.409825 C1515.46319,1280.39716 250.813485,1240.99824 -75.1940128,1127.56957 C-401.20151,1014.1409 -262.06537,713.211061 -144.479461,787.624587 Z"
+            />
+            </svg>
+        </div>
+    </div>
+</Layout>
+
+<style is:global>
+#intro {
+    /* grid container */
+    position: relative;
+    display: block;
+    display: grid;
+    z-index: 10;
+    pointer-events: auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 20% 20% 10% 45% 5%;
+    grid-template-rows: 36px 105px;
+    grid-template-areas:
+                "... ... ... tagline tagline"
+                "... ... name name name"
+                "... ... ... bio bio";
+  }
+  #intro .name {
+    grid-area: name;
+    padding-top: 30px;
+  }
+
+  #intro .portrait {
+    display: block;
+    background-image: url(/me.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 380px;
+    height: 380px;
+  }
+
+  #intro .tagline {
+    grid-area: tagline;
+    margin: 0;
+  }
+
+  #intro .bio {
+    grid-area: bio;
+    margin: 0;
+    justify-self: start;
+  }
+  #equalizer {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1em;
+    background-image: url(/equalizer.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    border: 0px solid #000;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+  }
+
+  /* projects section */
+
+  #projects {
+    position: relative;
+    display: block;
+    z-index: 15;
+  }
+
+  .projects {
+    /* grid container */
+    position: relative;
+    display: block;
+    pointer-events: auto;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  .project-list {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: none;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-gap: 2em;
+    z-index: 10;
+  }
+  .project-list li {
+    list-style: none;
+    border: 1px solid var(--text-color);
+    position: relative;
+    padding: 10px 14px;
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    margin: 0em 0 2em 0;
+  }
+
+  /* posts */
+
+  .post {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 650px
+  }
+  #header h1, h2 {
+    text-align: center;
+  }
+  #header h1{
+    font-size: 4.5em;
+  }
+  article {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 400;
+  }
+  article h2 {
+    font-size: 3em;
+    text-align: left;
+  }
+
+  /* elsewhere section */
+
+  #appearances h2 {
+    position: relative;
+    z-index: 10;
+  }
+  .appearances-list {
+    /* grid container */
+    position: relative;
+    display: grid;
+    pointer-events: auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-areas:
+                "list list ..."
+  }
+  .headshot {
+    position: relative;
+    display: block;
+    background-image: url(/me.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    z-index: 0;
+    margin: 2em 0;
+  }
+
+  .appearances-list ul {
+    grid-area: list;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    z-index: 10;
+  }
+  .appearances-list ul > a > li, .appearances-list ul > li {
+    list-style: none;
+    border: 1px solid var(--text-color);
+    position: relative;
+    padding: 10px 14px;
+    margin: 0em 0 2em 0;
+  }
+
+  /* footer */
+
+  #footer {
+    position: relative;
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: space-between; /* switched from default (flex-start, see below) */
+    z-index: 100;
+    margin: 3em 0 4em 0;
+  }
+  #footer p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
+
+  /* shapes */
+
+  .morph-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+  .morph {
+    position: relative;
+    height: 100%;
+    flex: none;
+  }
+  .morph-fill {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #F3E8E5;
+    opacity: 0.7;
+    top: -29% !important;
+    width: 95%;
+    left: 0;
+    z-index: 5;
+  }
+  .morph-outline {
+    z-index: 50;
+    top: -10% !important;
+    height:100%;
+  }
+  .morph-outline-lower {
+    position: fixed;
+    bottom: -50%;
+    z-index: 5;
+  }
+
+  /* responsive-ish */
+
+  @media screen and (min-width: 2040px) {
+    /* widest */
+    .morph-outline-lower {
+      display: none;
+    }
+    #intro .portrait {
+      width: 410px;
+      height: 410px;
+    }
+    #intro {
+      grid-template-rows: 40px 105px;
+    }
+    section {
+      margin: 8em 0 0em 0;
+    }
+  }
+
+  @media screen and (min-width: 1500px) {
+    /* widest */
+    main {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    main {
+      width: 60%;
+    }
+    section {
+      margin: 4em 0 0em 0;
+    }
+    #intro .portrait {
+      width: 280px;
+      height: 280px;
+    }
+    #intro {
+      grid-template-rows: 50px 105px;
+    }
+  }
+
+  @media screen  and (max-width: 1300px) {
+    main {
+      width: 70%;
+    }
+    #intro .portrait {
+      width: 220px;
+      height: 220px;
+    }
+  }
+  @media screen  and (max-width: 1000px) {
+    section {
+      margin: 3em 0 0 0;
+    }
+    main {
+      width: 80%;
+    }
+    #footer {
+      margin: 2em 0 2em 0;
+    }
+    section:last-of-type {
+      margin-bottom: 3em;
+    }
+  }
+
+  @media screen  and (max-width: 979px) /* tablet */ {
+    main {
+      width: 90%;
+    }
+    #intro .portrait {
+      width: 175px !important;
+      height: 175px !important;
+    }
+    #intro .name {
+        font-size: 28px;
+        padding-top:60px;
+    }
+  }
+
+  @media screen and (max-width: 780px) /* phablet? */ {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+    #intro {
+      grid-template-columns: 20% 20% 10% 45% 5%;
+      grid-template-rows: 70px 110px;
+      grid-template-areas:
+                  "... ... ... tagline tagline"
+                  "... ... name name name"
+                  "... ... ... bio bio";
+    }
+    #intro .portrait {
+      width: 305px;
+      height: 305px;
+    }
+    /*.projects div:last-child {
+        display:none;
+    }*/
+  }
+  @media screen and (max-width: 580px) /* mobile */ {
+    section{
+      margin: 1em 0 0 0;
+    }
+    #footer {
+      margin: 1em 0 2em 0;
+    }
+    h1,h2,h3,h4 {
+      font-weight: 900;
+    }
+
+    h1,h2,h3 {
+      text-align: left!important;
+    }
+    h1 {
+      font-size: 4em;
+      margin-left: -4px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-left: -2px;
+    }
+    #intro {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas:
+                  "..."
+                  "name"
+                  "tagline"
+                  "bio";
+    }
+    #intro .name {
+      text-align: center;
+    }
+    #intro .portrait {
+      display: none;
+    }
+    .projects ul {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+    .projects ul > a > li, .projects ul > li {
+      margin: 0em 0 2em 0;
+    }
+    .appearances-list {
+      /* grid container */
+      grid-template-areas:
+                  "list list list"
+    }
+    .appearances-list .headshot {
+      display: none;
+    }
+    .appearances-list ul {
+      grid-area: list;
+      margin: 0;
+      padding: 0;
+      display: block;
+      list-style-type: disc;
+    }
+    .appearances-list ul > a > li, .appearances-list ul > li {
+      list-style: none;
+      border: 1px solid black;
+      position: relative;
+      padding: 10px 14px;
+      margin: 0em 0 1em 0;
+    }
+    .morph-fill {
+      margin-top: -90px;
+      margin-left: -30px;
+      width: 120%;
+    }
+    .morph-outline {
+      display: none;
+    }
+  }
+</style>

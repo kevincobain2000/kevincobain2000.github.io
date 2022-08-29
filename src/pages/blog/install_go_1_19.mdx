@@ -1,0 +1,49 @@
+---
+title: Install Go 1.19 on Ubuntu or Mac
+description: Learn how to install Go 1.19 on Ubuntu or Mac. Go 1.19 is the latest version of Go programming language. It comes with many new features and improvements.
+pubDate: 2022-08-22
+image: "/images/install_go_1_19/install_go_1_19.png"
+---
+import BlogImage from "../../components/BlogImage.astro"
+
+# Install Go 1.19 on Ubuntu or Mac
+
+<br />
+
+<BlogImage src={import("../../images/install_go_1_19/install_go_1_19.png")} alt="install_go_1_19 image" />
+
+
+In this tutorial, we will learn how to install Go 1.19 on Ubuntu or Mac. Go 1.19 is the latest version of Go programming language. It comes with many new features and improvements.
+
+## Prerequisites
+
+- Ubuntu 20.04 or Mac
+
+## Install Go 1.19 on Ubuntu
+
+### Step 1: Download Gobrew
+
+Gobrew is a tool to manage multiple Go versions. It is a simple tool that allows you to install, uninstall, and switch between Go versions.
+
+```sh
+curl -sLk https://git.io/gobrew | sh -
+```
+
+### Step 2: Add Gobrew to PATH
+
+```sh
+echo 'export PATH="$HOME/.gobrew/current/bin:$HOME/.gobrew/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+### Step 3: Install Go 1.19
+
+```sh
+gobrew use 1.19
+```
+
+### Step 4: Verify Go 1.19
+
+```sh
+go version
+```

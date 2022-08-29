@@ -1,9 +1,11 @@
 ---
 export interface Props {
 	title: string;
+	description: string;
+	image: string;
 }
 
-const { title } = Astro.props;
+const { title, description, image } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -11,15 +13,13 @@ const { title } = Astro.props;
 	<head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width"/>
-        <title>Pulkit Kathuria</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="I work at Rakuten designing platform products to power entrepreneurship worldwide." />
-        <meta name="keywords" content="Pulkit Kathuria, design, product, platform, international, Japan, Rakuten" />
+        <meta name="description" content={description} />
         <meta name="author" content="Pulkit Kathuria" />
-        <meta property="og:title" content="Pulkit Kathuria" />
-        <meta property="og:description" content="I work at Rakuten as Applications Engineer in Japan" />
-        <meta property="og:image" content="https://kevincobain2000.github.io/me.jpeg" />
-        <meta property="og:url" content="https://kevincobain2000.github.io" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={image} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="Pulkit Kathuria" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
@@ -136,8 +136,5 @@ main {
 section {
   /*background-color: #fff;*/
   margin: 5em 0 0em 0;
-}
-section:last-of-type {
-  margin-bottom: 0em;
 }
 </style>

@@ -1,0 +1,53 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Morph from '@components/Morph.astro';
+import Footer from '@components/Footer.astro';
+
+let blogs = await Astro.glob("./blog/*.mdx");
+blogs = blogs.sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).valueOf() -
+    new Date(a.frontmatter.pubDate).valueOf()
+);
+
+---
+
+<Layout
+    title="kevincobain2000's Tech Blog"
+    description="List of tech blogs by kevincobain2000"
+    image="https://kevincobain2000.github.io/me.jpeg">
+    <main>
+        <section id="intro">
+            <h1 class="name">
+                <a href="/">kevincobain2000</a>
+                Tech Blog
+            </h1>
+            <div class="portrait"></div>
+            <h3 class="tagline">
+              List of blogs
+            </h3>
+        </section>
+        <br><br>
+        {
+            blogs.map((blog, idx) => (
+            <p>
+                {idx+1}. <a href={blog.url}>{blog.frontmatter.title}</a>
+                <br />
+                <span>{blog.frontmatter.description}</span>
+                <br />
+                <time datetime={blog.frontmatter.pubDate}>
+                    {new Date(blog.frontmatter.pubDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) }
+                </time>
+                <br />
+            </p>
+            ))
+          }
+       <Footer />
+    </main>
+    <Morph />
+</Layout>
+
+<style>
+
+
+</style>

@@ -37,7 +37,13 @@ const { title, description, image } = Astro.props;
     </script>
 </html>
 <style is:global>
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto:500&display=swap');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 *,
 *::after,

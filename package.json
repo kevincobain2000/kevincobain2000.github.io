@@ -9,11 +9,13 @@
     "preview": "astro preview",
     "astro": "astro"
   },
-  "devDependencies": {
-
-  },
   "dependencies": {
+    "@astrojs/image": "^0.3.6",
+    "@astrojs/mdx": "^0.10.2",
+    "@astrojs/sitemap": "^1.0.0",
     "astro": "^1.1.1",
-    "astro-compress": "^1.0.5"
+    "astro-compress": "^1.0.5",
+    "mdast-util-to-string": "^3.1.0",
+    "reading-time": "^1.5.0"
   }
 }

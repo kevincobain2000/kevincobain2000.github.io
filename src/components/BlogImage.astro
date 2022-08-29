@@ -1,0 +1,13 @@
+---
+import { Image } from "@astrojs/image/components";
+export interface Props {
+  src: string;
+  alt: string;
+}
+const { src, alt } = Astro.props as Props;
+---
+
+<Image
+  src={src}
+  alt={alt}
+/>

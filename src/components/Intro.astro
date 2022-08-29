@@ -1,0 +1,227 @@
+---
+export interface Props {
+}
+---
+
+<section id="intro">
+    <h1 class="name">Pulkit Kathuria</h1>
+    <div class="portrait"></div>
+    <p class="tagline">
+      Tech lead, developer, front end, back end, dev ops and server side
+      engineer. Architect and Assistant Manager.
+    </p>
+    <div class="bio">
+        <p>
+          I am a Tokyo based Applications developer. Working in{" "}
+          <a
+            href="https://global.rakuten.com/corp/about/"
+            title="Rakuten Inc"
+          >
+            {" "}
+            Rakuten Inc.
+          </a>
+          , Japan as Tech Lead and Architect. Prior to that I worked at{" "}
+          <a href="https://www.jaist.ac.jp/index.html" title="Gree">
+            JAIST
+          </a>
+          ,{" "}
+          <a href="https://corp.gree.net/jp/en/" title="Gree">
+            GREE
+          </a>
+          ,{" "}
+          <a href="https://www.telstra.com.au/" title="Telstra">
+            Telstra
+          </a>{" "}
+          and IBM
+        </p>
+        <p>
+          🎓 Before my career in IT tech industry, I studied NLP and A.I in
+          the{" "}
+          <a href="https://www.jaist.ac.jp/index.html">
+            JAIST 北陸先端科学技術大学院大学
+          </a>
+          . Computer Science at{" "}
+          <a href="https://www.rmit.edu.au" title="RMIT">
+            RMIT
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.cqu.edu.au/"
+            title="Central Queensland University"
+          >
+            Central Queensland University
+          </a>
+        </p>
+        <p class='bio'>
+            👋{" "}
+            <a href="kevincobain2000@gmail.com">kevincobain2000@gmail.com</a>
+            <br />
+            🚀{" "}
+            <a href="https://www.linkedin.com/in/プルキット-カトゥーリヤ-5895b759/">
+                LinkedIn
+            </a>
+            <br />
+            ✒️ <a href="https://medium.com/@kevincobain2000_74431">Medium</a>
+            <br />
+            💻 <a href="https://github.com/kevincobain2000">Github</a>
+            <br />
+            </p>
+      </div>
+</section>
+<style>
+#intro {
+    /* grid container */
+    position: relative;
+    display: block;
+    display: grid;
+    z-index: 10;
+    pointer-events: auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 20% 20% 10% 45% 5%;
+    grid-template-rows: 36px 105px;
+    grid-template-areas:
+                "... ... ... tagline tagline"
+                "... ... name name name"
+                "... ... ... bio bio";
+  }
+  #intro .name {
+    grid-area: name;
+    padding-top: 30px;
+  }
+
+  #intro .portrait {
+    display: block;
+    background-image: url(/me.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 380px;
+    height: 380px;
+  }
+
+  #intro .tagline {
+    grid-area: tagline;
+    margin: 0;
+  }
+
+  #intro .bio {
+    grid-area: bio;
+    margin: 0;
+    justify-self: start;
+  }
+  @media screen and (min-width: 2040px) {
+    #intro .portrait {
+      width: 410px;
+      height: 410px;
+    }
+    #intro {
+      grid-template-rows: 40px 105px;
+    }
+    section {
+      margin: 8em 0 0em 0;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    main {
+      width: 60%;
+    }
+    section {
+      margin: 4em 0 0em 0;
+    }
+    #intro .portrait {
+      width: 280px;
+      height: 280px;
+    }
+    #intro {
+      grid-template-rows: 50px 105px;
+    }
+  }
+  @media screen  and (max-width: 1300px) {
+    main {
+      width: 70%;
+    }
+    #intro .portrait {
+      width: 220px;
+      height: 220px;
+    }
+  }
+
+  @media screen  and (max-width: 979px) /* tablet */ {
+    main {
+      width: 90%;
+    }
+    #intro .portrait {
+      width: 175px !important;
+      height: 175px !important;
+    }
+    #intro .name {
+        font-size: 28px;
+        padding-top:60px;
+    }
+  }
+
+  @media screen and (max-width: 780px) /* phablet? */ {
+    h1 {
+      font-size: 3em;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+    #intro {
+      grid-template-columns: 20% 20% 10% 45% 5%;
+      grid-template-rows: 70px 110px;
+      grid-template-areas:
+                  "... ... ... tagline tagline"
+                  "... ... name name name"
+                  "... ... ... bio bio";
+    }
+    #intro .portrait {
+      width: 305px;
+      height: 305px;
+    }
+    /*.projects div:last-child {
+        display:none;
+    }*/
+  }
+  @media screen and (max-width: 580px) /* mobile */ {
+    #footer {
+      margin: 1em 0 2em 0;
+    }
+    h1,h2,h3,h4 {
+      font-weight: 900;
+    }
+
+    h1,h2,h3 {
+      text-align: left!important;
+    }
+    h1 {
+      font-size: 4em;
+      margin-left: -4px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-left: -2px;
+    }
+    #intro {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas:
+                  "..."
+                  "name"
+                  "tagline"
+                  "bio";
+    }
+    #intro .name {
+      text-align: center;
+    }
+    #intro .portrait {
+      display: none;
+    }
+
+  }
+</style>

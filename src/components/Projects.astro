@@ -1,0 +1,272 @@
+---
+export interface Props {
+}
+const openSourced = [
+        {
+            name: "Sentiment Classifier",
+            description: "Sentiment Classifier using Word Sense Disambiguation",
+            github: "https://github.com/kevincobain2000/sentiment_classifier",
+            demo: "",
+            blog: "",
+        },
+        {
+            name: "jProcessing",
+            description: "Japanese Natural Langauge Processing Libraries",
+            github: "https://github.com/kevincobain2000/jProcessing",
+            demo: ""
+        },
+        {
+            name: "Laravel Throttled Alert Notifications",
+            description: "Send alert to email, microsoft teams from laravel app, when an exception occurs.",
+            github: "https://github.com/kevincobain2000/laravel-alert-notifications",
+            demo: ""
+        },
+        {
+            name: "Gobrew",
+            description: "Install and manage Go version",
+            github: "https://github.com/kevincobain2000/gobrew",
+            demo: "https://github.com/kevincobain2000/gobrew/actions",
+            blog: "https://medium.com/web-developer/go-version-manager-gobrew-c8750157dfe6"
+        },
+        {
+            name: "Setup Go - Github Action",
+            description: "Setup Go in github action",
+            github: "https://github.com/kevincobain2000/action-gobrew",
+            demo: "",
+            blog: "https://medium.com/web-developer/dead-simple-go-setup-github-actions-ee9fd7e1c87f"
+        },
+        {
+            name: "Scrape App store and Google play reviews",
+            description: "App store reviews monitoring tool",
+            github: "https://github.com/kevincobain2000/go-app-reviews-scraper",
+            demo: "",
+            blog: ""
+        },
+        {
+            name: "Laravel Request Docs",
+            description: "Automatically generate Laravel API docs",
+            github: "https://github.com/rakutentech/laravel-request-docs",
+            demo: "https://kevincobain2000.github.io/laravel-admin-api/request-docs/",
+            blog: ""
+        },
+        {
+            name: "Laravel ERD",
+            description: "Automatically generate Laravel ERD",
+            github: "https://github.com/kevincobain2000/laravel-erd",
+            demo: "https://kevincobain2000.github.io/laravel-blog/erd/",
+            blog: ""
+        },
+        {
+            name: "Miller Rabin Primality Test Online",
+            description: "Big integers prime number checker",
+            github: "https://github.com/kevincobain2000/miller-rabin-primality-test-online",
+            demo: "https://kevincobain2000.github.io/miller-rabin-primality-test-online/",
+            blog: ""
+        },
+        {
+            name: "Google Cloud Icons Search",
+            description: "Search Google Cloud Icons",
+            github: "https://github.com/kevincobain2000/google-cloud-icons",
+            demo: "https://kevincobain2000.github.io/google-cloud-icons/",
+            blog: ""
+        },
+        {
+            name: "Go Language Cheat Sheet",
+            description: "Quick search for golang syntax and features",
+            github: "https://github.com/kevincobain2000/golang-cheat-sheet",
+            demo: "https://kevincobain2000.github.io/golang-cheat-sheet/",
+            blog: ""
+        },
+        {
+            name: "LATEX Writer",
+            description: "Write beautiful docs in LaTeX css.",
+            github: "https://github.com/kevincobain2000/latex-writer/",
+            demo: "https://kevincobain2000.github.io/latex-writer/",
+            blog: ""
+        },
+        {
+            name: "Medium Code Highlight",
+            description: "Add highlighted code to Medium story.",
+            github: "https://github.com/kevincobain2000/medium-code-highlight/",
+            demo: "https://kevincobain2000.github.io/medium-code-highlight/",
+            blog: ""
+        }
+    ];
+---
+
+<section id="appearances">
+    <div>
+        <h2>Tools</h2>
+        <div class="appearances-list">
+          <div class="headshot"></div>
+          <ul>
+              {openSourced.map((appearance) => (
+                  <li>
+                      <h4>{appearance.name}</h4>
+                      {appearance.description}
+                      <br />
+                      <a href={appearance.github} title={appearance.github}>Github</a>
+                      {" "}
+                      {appearance.demo && <a href={appearance.demo} title={appearance.demo}>Demo</a>}
+                      {" "}
+                      {appearance.blog && <a href={appearance.blog} title={appearance.blog}>Blog</a>}
+                  </li>
+              ))}
+          </ul>
+        </div>
+      </div>
+</section>
+<style>
+  /* projects section */
+
+  #projects {
+    position: relative;
+    display: block;
+    z-index: 15;
+  }
+
+  .projects {
+    /* grid container */
+    position: relative;
+    display: block;
+    pointer-events: auto;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  .project-list {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: none;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    column-gap: 2em;
+    z-index: 10;
+  }
+  .project-list li {
+    list-style: none;
+    border: 1px solid var(--text-color);
+    position: relative;
+    padding: 10px 14px;
+    break-inside: avoid-column;
+    -webkit-column-break-inside: avoid;
+    margin: 0em 0 2em 0;
+  }
+
+  /* posts */
+
+  .post {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 50%;
+    max-width: 650px
+  }
+  #header h1, h2 {
+    text-align: center;
+  }
+  #header h1{
+    font-size: 4.5em;
+  }
+
+  /* elsewhere section */
+
+  #appearances h2 {
+    position: relative;
+    z-index: 10;
+  }
+  .appearances-list {
+    /* grid container */
+    position: relative;
+    display: grid;
+    pointer-events: auto;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-areas:
+                "list list ..."
+  }
+  .headshot {
+    position: relative;
+    display: block;
+    background-image: url(/me.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    z-index: 0;
+    margin: 2em 0;
+  }
+
+  .appearances-list ul {
+    grid-area: list;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    z-index: 10;
+  }
+  .appearances-list ul > a > li, .appearances-list ul > li {
+    list-style: none;
+    border: 1px solid var(--text-color);
+    position: relative;
+    padding: 10px 14px;
+    margin: 0em 0 2em 0;
+  }
+
+
+  @media screen and (max-width: 1500px) {
+    main {
+      width: 60%;
+    }
+  }
+
+  @media screen  and (max-width: 1000px) {
+    main {
+      width: 80%;
+    }
+  }
+
+
+  @media screen and (max-width: 780px) /* phablet? */ {
+  }
+  @media screen and (max-width: 580px) /* mobile */ {
+    .projects ul {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+    .projects ul > a > li, .projects ul > li {
+      margin: 0em 0 2em 0;
+    }
+    .appearances-list {
+      /* grid container */
+      grid-template-areas:
+                  "list list list"
+    }
+    .appearances-list .headshot {
+      display: none;
+    }
+    .appearances-list ul {
+      grid-area: list;
+      margin: 0;
+      padding: 0;
+      display: block;
+      list-style-type: disc;
+    }
+    .appearances-list ul > a > li, .appearances-list ul > li {
+      list-style: none;
+      border: 1px solid black;
+      position: relative;
+      padding: 10px 14px;
+      margin: 0em 0 1em 0;
+    }
+
+  }
+</style>

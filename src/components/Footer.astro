@@ -1,0 +1,32 @@
+---
+export interface Props {
+}
+---
+
+<section id="footer">
+    <p>&copy; 2019 Pulkit Kathuria</p>
+    <p>
+      <a href="#" title="Back to top">
+        Back to top ↑
+      </a>
+    </p>
+</section>
+<style>
+
+  /* footer */
+
+  #footer {
+    position: relative;
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: space-between; /* switched from default (flex-start, see below) */
+    z-index: 100;
+    margin: 3em 0 4em 0;
+  }
+  #footer p {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
+</style>

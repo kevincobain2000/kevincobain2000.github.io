@@ -30,13 +30,14 @@ blogs = blogs.sort(
             blogs.map((blog, idx) => (
             <p>
                 {idx+1}. <a href={blog.url}>{blog.frontmatter.title}</a>
+                <small>(It's a {blog.frontmatter.minutesRead})</small>
                 <br />
                 <span>{blog.frontmatter.description}</span>
-                <br />
-                <time datetime={blog.frontmatter.pubDate}>
-                    {new Date(blog.frontmatter.pubDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) }
-                </time>
-                <br />
+                <small class="pull-right">
+                    <time datetime={blog.frontmatter.pubDate}>
+                        {new Date(blog.frontmatter.pubDate).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) }
+                    </time>
+                </small>
             </p>
             ))
           }
@@ -46,6 +47,8 @@ blogs = blogs.sort(
 </Layout>
 
 <style>
-
+.pull-right {
+    float: right;
+}
 
 </style>

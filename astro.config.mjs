@@ -7,7 +7,7 @@ import getReadingTime from "reading-time";
 import { toString } from "mdast-util-to-string";
 
 export default defineConfig({
-
+  site: "https://kevincobain2000.github.io",
   integrations: [
     compress(),
     image(),

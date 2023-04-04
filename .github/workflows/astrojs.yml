@@ -6,7 +6,7 @@ jobs:
     name: Astro Test
     strategy:
       matrix:
-        node-versions: [16.13]
+        node-versions: [16]
     runs-on: ubuntu-latest
     steps:
     - name: Cancel Previous Runs

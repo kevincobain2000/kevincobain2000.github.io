@@ -24,17 +24,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-versions }}
 
-      - name: Setup yarn
-        run: npm install -g pnpm
-
-      - name: Setup pnpm
-        run: npm install -g pnpm
-
       - name: Install dependencies
-        run: pnpm install --production
+        run: npm install --production
 
       - name: Export
-        run: pnpm run build
+        run: npm run build
 
       - name: .nojekyll
         run: touch ./dist/.nojekyll

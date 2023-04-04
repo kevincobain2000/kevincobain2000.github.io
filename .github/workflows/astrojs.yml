@@ -22,11 +22,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-versions }}
 
-    - name: Setup pnpm
-      run: npm install -g pnpm
-
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile
+      run: npm install --frozen-lockfile
 
     - name: Build
-      run: pnpm run build
+      run: npm run build

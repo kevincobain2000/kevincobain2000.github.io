@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.3.6",
-    "@astrojs/mdx": "^0.10.2",
-    "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.1.1",
-    "astro-compress": "^1.0.5",
-    "mdast-util-to-string": "^3.1.0",
+    "@astrojs/image": "^0.3.7",
+    "@astrojs/mdx": "^0.10.3",
+    "@astrojs/sitemap": "^1.4.0",
+    "astro": "^1.9.2",
+    "astro-compress": "^2.0.15",
+    "mdast-util-to-string": "^3.2.0",
     "reading-time": "^1.5.0"
   }
 }

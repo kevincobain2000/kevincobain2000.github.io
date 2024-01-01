@@ -7,21 +7,20 @@
 ## Dev
 
 ```sh
-npm install -g pnpm
-pnpm install
-pnpm run dev
+npm install
+npm run dev
 ```
 
 ## Static pages
 
 ```sh
-pnpm run build
+npm run build
 ```
 
 ## Prod
 
 ```sh
-pnpm run preview
+npm run preview
 ```
 ## CHANGELOG
 

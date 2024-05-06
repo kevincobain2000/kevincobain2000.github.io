@@ -27,13 +27,13 @@ const { title, description, image } = Astro.props;
 	<body>
 		<slot />
 	</body>
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-40862413-1" strategy="afterInteractive"/>
-    <script id="google-analytics" strategy="afterInteractive">
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){window.dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-ZKMHEB1Y19"></script>
+    <script is:inline type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-        gtag('config', 'UA-40862413-1');
+    gtag('config', 'G-ZKMHEB1Y19');
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3871023054742376"
     crossorigin="anonymous"></script>
